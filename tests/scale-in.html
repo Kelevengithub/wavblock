@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WavBlock Test: scale-in</title>
+    <link rel="stylesheet" href="../styles/wavBlock.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #111827;
+            --text-color: #f3f4f6;
+            --card-bg-color: #1f2937;
+            --border-color: #374151;
+            --accent-gradient: linear-gradient(to right, #2dd4bf, #14b8a6);
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .main-container {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            width: 100%;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        .title-card h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: -0.05em;
+        }
+        .title-card .animation-name {
+            font-weight: 900;
+            background-image: var(--accent-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .scroll-prompt {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            opacity: 0.6;
+        }
+        .demo-box {
+            width: 250px;
+            height: 250px;
+            background: var(--card-bg-color);
+            display: grid;
+            place-items: center;
+            font-size: 1.75rem;
+            font-weight: 700;
+            border-radius: 1rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2), 0 10px 10px -5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="title-card">
+            <h1>WavBlock Demo: <span class="animation-name">scale-in</span></h1>
+            <div class="scroll-prompt">
+                <span>Scroll Down</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="demo-box" data-wavblock="scale-in">
+            scale-in
+        </div>
+    </div>
+    <script src="../dist/wavblock.min.js"></script>
+</body>
+</html>
+
