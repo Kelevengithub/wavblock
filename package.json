@@ -1,6 +1,6 @@
 {
   "name": "wavblock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WavBlock is a lightweight, zero-dependency library for creating elegant scroll-triggered animations. It uses simple data attributes to apply effects like fades, scaling, and typewriter text, making it easy to build high-performance, expressive websites with minimal code.",
   "main": "dist/wavblock.cjs",
   "module": "dist/wavblock.mjs",
