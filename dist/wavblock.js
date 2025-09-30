@@ -1,5 +1,5 @@
 /*!
- * WavBlock.js v1.0.0
+ * WavBlock.js v1.0.1
  * Author: Kaustav M. Bhuyan
  * (c) 2025 Keleven
  * Released under the MIT License
